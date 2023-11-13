@@ -1,0 +1,18 @@
+name: Build and Deploy to Live server
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test this output
+        run: |
+          echo $SECRET
+        shell: bash
+        env:
+          SECRET: ${{ secrets.SECRET }}
