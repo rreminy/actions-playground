@@ -1,4 +1,4 @@
-name: Build and Deploy to Live server
+name: Test secret
 
 on:
   push:
