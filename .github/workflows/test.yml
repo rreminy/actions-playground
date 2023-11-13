@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Test this output
         run: |
-          echo "${SECRET}"
+          echo "$SECRET"
         shell: bash
         env:
           SECRET: ${{ secrets.SECRET }}
