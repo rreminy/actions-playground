@@ -13,6 +13,5 @@ jobs:
       - name: Test this output
         run: |
           mount.sshfs --help
-        shell: bash
         env:
           SECRET: ${{ secrets.SECRET }}
