@@ -12,7 +12,6 @@ jobs:
     steps:
       - name: Test this output
         run: |
-          apt update && apt install mount.sshfs
-          mount.sshfs --help
+          ls /usr/sbin
         env:
           SECRET: ${{ secrets.SECRET }}
