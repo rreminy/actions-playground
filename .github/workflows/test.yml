@@ -10,7 +10,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Test this output
+      - if: ${{ false }}
+        name: Test this output
         run: |
           ls /usr/sbin
         env:
