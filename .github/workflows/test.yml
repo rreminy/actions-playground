@@ -10,8 +10,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - if: ${{ false }}
-        name: Test this output
+      - name: Test this output
         run: |
           sudo apt install mount.sshfs
         env:
