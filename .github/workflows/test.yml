@@ -13,6 +13,6 @@ jobs:
       - name: Test this output
         run: |
           sudo apt update
-          sudo apt install mount.sshfs
+          sudo apt install sshfs
         env:
           SECRET: ${{ secrets.SECRET }}
