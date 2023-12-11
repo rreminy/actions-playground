@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Test this output
         run: |
+          sudo apt update
           sudo apt install mount.sshfs
         env:
           SECRET: ${{ secrets.SECRET }}
