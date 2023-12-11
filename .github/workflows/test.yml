@@ -13,6 +13,6 @@ jobs:
       - if: ${{ false }}
         name: Test this output
         run: |
-          ls /usr/sbin
+          sudo apt install mount.sshfs
         env:
           SECRET: ${{ secrets.SECRET }}
