@@ -31,4 +31,5 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             echo "Hello World"
-            true
+            false
+            echo "bye"
